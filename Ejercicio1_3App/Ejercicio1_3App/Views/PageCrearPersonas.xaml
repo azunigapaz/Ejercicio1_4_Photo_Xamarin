@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_3App.Views.PageCrearPersonas">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image x:Name="img" HeightRequest="300" WidthRequest="100" BackgroundColor="AliceBlue"/>
+
+            <Button x:Name="btntakephoto" Text="Tomar Foto" Clicked="btntakephoto_Clicked" />
+
+            <Entry
+                x:Name="nombre" 
+                Placeholder="Nombre" />
+
+            <Entry
+                x:Name="apellido" 
+                Placeholder="Apellido" />
+
+            <Entry
+                x:Name="edad" 
+                Keyboard="Numeric"
+                Placeholder="Edad"  />
+
+            <Entry
+                x:Name="correo"
+                Keyboard="Email"
+                Placeholder="Correo" />
+
+            <Entry
+                x:Name="direccion" 
+                Placeholder="Direccion" />
+
+            <Button x:Name="btnagregar" Text="Agregar Persona" Clicked="btnagregar_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio1_3App.Views.PageUpdatePersonas">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image Source="{Binding imagen}" x:Name="img" HeightRequest="300" WidthRequest="100" BackgroundColor="AliceBlue"/>
+
+            <Button x:Name="btntakephoto" Text="Tomar Foto" Clicked="btntakephoto_Clicked" />            
+            
+            <Entry
+                x:Name="id" 
+                Placeholder="ID" 
+                Text="{Binding codigo}" 
+                IsVisible="False" />
+
+            <Entry
+                x:Name="nombre" 
+                Placeholder="Nombre" 
+                Text="{Binding nombres}"/>
+
+            <Entry
+                x:Name="apellido" 
+                Placeholder="Apellido" 
+                Text="{Binding apellidos}" />
+
+            <Entry
+                x:Name="edad" 
+                Keyboard="Numeric"
+                Placeholder="Edad"  
+                Text="{Binding edad}" />
+
+            <Entry
+                x:Name="correo"
+                Keyboard="Email"
+                Placeholder="Correo" 
+                Text="{Binding correo}" />
+
+            <Entry
+                x:Name="direccion" 
+                Placeholder="Direccion" 
+                Text="{Binding direccion}" />
+
+            <Grid>
+
+                <Button
+                    x:Name="btnactualizar"
+                    Text="Actualizar"
+                    Clicked="btnactualizar_Clicked" />
+
+                <Button
+                    x:Name="btneliminar"
+                    Text="Eliminar"
+                    Grid.Column="1"
+                    Clicked="btneliminar_Clicked" />                
+
+            </Grid>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
